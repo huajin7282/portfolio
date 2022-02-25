@@ -8,6 +8,7 @@
   --color-orange: #f8ac08;
   --color-dark-orange: #f8ac08c0;
   --color-blue: #4280aa;
+  --color-light-green: #bdceb6;
 
   /* Font size */
   --font-large: 48px;
@@ -92,7 +93,6 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-orange);
   align-items: center;
   color: var(--color-white);
   padding: 16px;
@@ -129,16 +129,17 @@ p {
 
 /* Home */
 #home {
-  background-color: var(--color-blue);
+  background: url("imgs/background.png") center/cover no-repeat;
   padding: 40px;
   text-align: center;
 }
 
 .home__avatar {
   width: 250px;
-  height: 250px;
+  height: 300px;
   border-radius: 50%;
   border: 2px solid var(--color-light-white);
+  margin: 64px;
 }
 
 .home__title,
@@ -218,7 +219,7 @@ p {
 
 /* Skill */
 #skills {
-  background-color: var(--color-orange);
+  background-color: var(--color-light-green);
   margin-bottom: 32px;
 }
 
@@ -256,7 +257,7 @@ p {
 
 .skill__value {
   height: 3px;
-  background-color: var(--color-orange);
+  background-color: var(--color-light-green);
 }
 
 .skillset__right {
@@ -270,4 +271,33 @@ p {
 .tools,
 .etc {
   padding: 20px;
+}
+
+/* Work */
+.category__btn {
+  border: 1px solid var(--color-dark-white);
+  border-radius: var(--size-border-radius);
+  font-size: var(--font-regular);
+  padding: 8px 48px;
+}
+
+.category__btn:active,
+.category__btn:hover {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+/* Contact */
+#contact {
+  background-color: var(--color-light-green);
+}
+
+.contact__title,
+.contact__email,
+.contact__phone {
+  color: var(--color-white);
+}
+
+.contact__title {
+  margin: 32px 0;
 }
