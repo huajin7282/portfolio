@@ -7,8 +7,12 @@
   --color-dark-white: #bdbdbd;
   --color-orange: #f8ac08;
   --color-dark-orange: #f8ac08c0;
-  --color-blue: #4280aa;
   --color-light-green: #bdceb6;
+  --color-light-pink: rgb(236, 198, 194);
+  --color-green: rgb(68, 183, 100);
+  --color-pink: rgb(217, 25, 106);
+  --color-yellow: rgb(253, 213, 1);
+  --color-blue: rgb(34, 116, 165);
 
   /* Font size */
   --font-large: 48px;
@@ -94,7 +98,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--color-white);
+  color: var(--color-black);
   padding: 16px;
 }
 
@@ -135,16 +139,16 @@ p {
 }
 
 .home__avatar {
-  width: 250px;
+  width: 300px;
   height: 300px;
   border-radius: 50%;
-  border: 2px solid var(--color-light-white);
+  border: 2px solid var(--color-black);
   margin: 64px;
 }
 
 .home__title,
 .home__description {
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .home__contact {
@@ -170,6 +174,10 @@ p {
 }
 
 /* About */
+.about__title {
+  color: var(--color-blue);
+}
+
 .about__majors {
   display: flex;
   justify-content: space-between;
@@ -179,11 +187,11 @@ p {
 .major__icon {
   width: 170px;
   height: 170px;
-  background-color: antiquewhite;
+  background-color: var(--color-yellow);
   font-size: 70px;
   line-height: 170px;
   margin: auto;
-  border: 1px solid var(--color-blue);
+  border: 2px solid var(--color-blue);
   border-radius: 50%;
   margin-bottom: 16px;
   color: var(--color-blue);
@@ -206,6 +214,7 @@ p {
 
 .job__name {
   font-size: var(--font-small);
+  color: var(--color-blue);
 }
 
 .job__period {
@@ -221,6 +230,10 @@ p {
 #skills {
   background-color: var(--color-light-green);
   margin-bottom: 32px;
+}
+
+.skills__title {
+  color: var(--color-green);
 }
 
 .skill {
@@ -257,7 +270,7 @@ p {
 
 .skill__value {
   height: 3px;
-  background-color: var(--color-light-green);
+  background-color: var(--color-green);
 }
 
 .skillset__right {
@@ -274,6 +287,10 @@ p {
 }
 
 /* Work */
+.work__title {
+  color: var(--color-yellow);
+}
+
 .category__btn {
   border: 1px solid var(--color-dark-white);
   border-radius: var(--size-border-radius);
@@ -289,10 +306,13 @@ p {
 
 /* Contact */
 #contact {
-  background-color: var(--color-light-green);
+  background-color: var(--color-light-pink);
 }
 
-.contact__title,
+.contact__title {
+  color: var(--color-pink);
+}
+
 .contact__email,
 .contact__phone {
   color: var(--color-white);
