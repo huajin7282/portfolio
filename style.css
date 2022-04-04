@@ -111,6 +111,10 @@ p {
   font-weight: var(--weight-semi-bold);
 }
 
+.navbar__title {
+  color: var(--color-black);
+}
+
 .navbar__menu__item {
   padding: 8px 12px;
   margin: 0 4px;
@@ -119,16 +123,25 @@ p {
 }
 
 .navbar__logo__icon {
+  vertical-align: middle;
   width: 1em;
   height: 1em;
 }
 
-.navbar__menu__item:active {
-  background-color: var(--color-dark-orange);
+#navbar__menu__item__home:hover {
+  color: var(--color-white);
 }
-
-.navbar__menu__item:hover {
-  border: 1px solid var(--color-white);
+#navbar__menu__item__about:hover {
+  color: var(--color-blue);
+}
+#navbar__menu__item__skill:hover {
+  color: var(--color-green);
+}
+#navbar__menu__item__work:hover {
+  color: var(--color-yellow);
+}
+#navbar__menu__item__contact:hover {
+  color: var(--color-pink);
 }
 
 /* Home */
@@ -152,13 +165,17 @@ p {
 }
 
 .home__contact {
-  color: var(--color-light-white);
+  color: var(--color-black);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   margin: 24px;
   padding: 8px 12px;
-  border: 2px solid var(--color-white);
+  border: 2px solid var(--color-black);
   border-radius: var(--size-border-radius);
+}
+.home__contact:hover {
+  color: var(--color-pink);
+  border: 2px solid var(--color-pink);
 }
 
 /* Section common */
