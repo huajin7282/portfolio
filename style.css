@@ -5,8 +5,6 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-orange: #f8ac08;
-  --color-dark-orange: #f8ac08c0;
   --color-light-green: #bdceb6;
   --color-light-pink: rgb(236, 198, 194);
   --color-light-yello: rgb(243, 227, 147);
@@ -274,18 +272,19 @@ p {
 
 .skillset {
   display: flex;
-  background-color: lightgray;
-  color: var(--color-light-white);
+  background-color: var(--color-light-white);
+  color: var(--color-black);
   margin: 20px 0;
 }
 
 .skillset__title {
-  color: var(--color-white);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
 }
 
 .skillset__left {
   flex-basis: 60%;
-  background-color: darkgrey;
+  background-color: cornsilk;
   padding: 20px 40px;
 }
 
@@ -297,7 +296,7 @@ p {
 .skill__bar {
   width: 100%;
   height: 3px;
-  background-color: gray;
+  background-color: var(--color-light-green);
 }
 
 .skill__value {
@@ -310,7 +309,7 @@ p {
 }
 
 .tools {
-  background-color: grey;
+  background-color: seagreen;
 }
 
 .tools,
