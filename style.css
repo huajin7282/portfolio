@@ -9,6 +9,8 @@
   --color-dark-orange: #f8ac08c0;
   --color-light-green: #bdceb6;
   --color-light-pink: rgb(236, 198, 194);
+  --color-light-yello: rgb(243, 227, 147);
+  --color-light-blue: rgb(150, 195, 221);
   --color-green: rgb(68, 183, 100);
   --color-pink: rgb(217, 25, 106);
   --color-yellow: rgb(253, 213, 1);
@@ -219,6 +221,14 @@ p {
   transition: all var(--animation-duration) ease;
 }
 
+.about__jobs {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  border: solid 2px var(--color-blue);
+}
+
 .job {
   display: flex;
   align-items: center;
@@ -231,16 +241,21 @@ p {
 
 .job__name {
   font-size: var(--font-small);
-  color: var(--color-blue);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
 }
 
 .job__period {
   font-size: var(--font-micro);
 }
 
-.job__logo {
-  width: 150px;
-  height: 50px;
+.job__logo__tmax {
+  width: 200px;
+  height: 44px;
+}
+.job__logo__soongsil {
+  width: 100px;
+  height: 24px;
 }
 
 /* Skill */
