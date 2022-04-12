@@ -2,6 +2,7 @@
 :root {
   /* Color */
   --color-black: #000000;
+  --color-grey: grey;
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
@@ -116,10 +117,10 @@ p {
 }
 
 .navbar__menu__item {
+  font-weight: var(--weight-semi-bold);
   padding: 8px 12px;
   margin: 0 4px;
   cursor: pointer;
-  border-radius: var(--size-border-radius);
 }
 
 .navbar__logo__icon {
@@ -165,12 +166,12 @@ p {
 }
 
 .home__contact {
-  color: var(--color-black);
+  color: var(--color-grey);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   margin: 24px;
   padding: 8px 12px;
-  border: 2px solid var(--color-black);
+  border: 2px solid var(--color-grey);
   border-radius: var(--size-border-radius);
 }
 .home__contact:hover {
@@ -224,7 +225,7 @@ p {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  border: solid 2px var(--color-blue);
+  background-color: var(--color-light-white);
 }
 
 .job {
@@ -259,7 +260,6 @@ p {
 /* Skill */
 #skills {
   background-color: var(--color-light-green);
-  margin-bottom: 32px;
 }
 
 .skills__title {
@@ -284,7 +284,7 @@ p {
 
 .skillset__left {
   flex-basis: 60%;
-  background-color: cornsilk;
+  background-color: seagreen;
   padding: 20px 40px;
 }
 
@@ -296,12 +296,12 @@ p {
 .skill__bar {
   width: 100%;
   height: 3px;
-  background-color: var(--color-light-green);
+  background-color: darkgreen;
 }
 
 .skill__value {
   height: 3px;
-  background-color: var(--color-green);
+  background-color: var(--color-white);
 }
 
 .skillset__right {
@@ -309,7 +309,7 @@ p {
 }
 
 .tools {
-  background-color: seagreen;
+  background-color: var(--color-dark-white);
 }
 
 .tools,
@@ -328,7 +328,7 @@ p {
 
 .category__btn {
   color: var(--color-blue);
-  border: 2px solid var(--color-yellow);
+  border: 2px solid gray;
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
