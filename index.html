@@ -47,6 +47,10 @@
             Contact
           </li>
         </ul>
+        <!-- Toggle button -->
+        <button class="navbar__toggle-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </nav>
       <img class="home__avatar" src="imgs/profile2.png" alt="profile photo" />
       <h1 class="home__title">이화진</h1>
@@ -55,61 +59,65 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="section section__container">
-      <h1 class="about__title">About me</h1>
-      <p></p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon">
-            <i class="fa-brands fa-html5"></i>
+    <section id="about" class="section">
+      <div class="section__container">
+        <h1 class="about__title">About me</h1>
+        <p></p>
+        <div class="about__majors">
+          <div class="major">
+            <div class="major__icon">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <h2 class="major__title">HTML</h2>
           </div>
-          <h2 class="major__title">HTML</h2>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fa-brands fa-css3"></i>
+          <div class="major">
+            <div class="major__icon">
+              <i class="fa-brands fa-css3"></i>
+            </div>
+            <h2 class="major__title">CSS</h2>
           </div>
-          <h2 class="major__title">CSS</h2>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fa-brands fa-js"></i>
+          <div class="major">
+            <div class="major__icon">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <h2 class="major__title">JavaScript</h2>
           </div>
-          <h2 class="major__title">JavaScript</h2>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fa-brands fa-react"></i>
-          </div>
-          <h2 class="major__title">React</h2>
-        </div>
-      </div>
-      <div class="about__jobs">
-        <div class="job">
-          <img
-            src="imgs/Tmaxsoft CI.png"
-            alt="company_tmaxsoft"
-            class="job__logo__tmax"
-          />
-          <div class="job__description">
-            <p class="job__name">티맥스소프트 연구원 재직</p>
-            <p class="job__period">2021년 1월 ~ 현재</p>
+          <div class="major">
+            <div class="major__icon">
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <h2 class="major__title">React</h2>
           </div>
         </div>
-        <div class="job">
-          <img
-            src="imgs/soongsil CI.png"
-            alt="university_soongsil"
-            class="job__logo__soongsil"
-          />
-          <img
-            src="imgs/soongsil logo.png"
-            alt="university_soongsil"
-            class="job__logo__soongsil"
-          />
-          <div class="job__description">
-            <p class="job__name">숭실대학교 컴퓨터학부 졸업</p>
-            <p class="job__period">2017년 3월 ~ 2021년 2월</p>
+        <div class="about__jobs">
+          <div class="job">
+            <img
+              src="imgs/Tmaxsoft CI.png"
+              alt="company_tmaxsoft"
+              class="job__logo__tmax"
+            />
+            <div class="job__description">
+              <p class="job__name">티맥스소프트 연구원 재직</p>
+              <p class="job__period">2021년 1월 ~ 현재</p>
+            </div>
+          </div>
+          <div class="job">
+            <div>
+              <img
+                src="imgs/soongsil CI.png"
+                alt="university_soongsil"
+                class="job__logo__soongsil"
+              />
+              <img
+                src="imgs/soongsil logo.png"
+                alt="university_soongsil"
+                class="job__logo__soongsil"
+              />
+            </div>
+            <div class="job__description">
+              <p class="job__name">숭실대학교 컴퓨터학부 졸업</p>
+              <p class="job__period">2017년 3월 ~ 2021년 2월</p>
+            </div>
           </div>
         </div>
       </div>
@@ -181,43 +189,45 @@
 
     <!-- Work -->
     <section id="work" class="section">
-      <h1 class="work__title">My work</h1>
-      <div class="work__categories">
-        <button class="category__btn active">
-          All <span class="category__count">1</span>
-        </button>
-        <button class="category__btn">
-          Company <span class="category__count">1</span>
-        </button>
-        <button class="category__btn">
-          Personal <span class="category__count">0</span>
-        </button>
-      </div>
-      <div class="work__projects">
-        <a class="project">
-          <img
-            src="imgs/simulator.png"
-            alt="project_simulator"
-            class="project__img"
-          />
-          <h3 class="project__title">AnyWebSimulator</h3>
-          <span class="project__description"
-            >티맥스소프트의 AnyLink 제품에서 개발된<br />온라인 거래를
-            실시간으로 테스트하기 위한<br />웹 서비스<br /><br />HTML, CSS,
-            JavaScript / React</span
-          >
-        </a>
-        <a href="https://github.com/huajin7282/portfolio" class="project">
-          <img
-            src="imgs/simulator.png"
-            alt="project_portfolio"
-            class="project__img"
-          />
-          <h3 class="project__title">Portfolio</h3>
-          <span class="project__description"
-            >웹 프로필<br /><br />HTML, CSS, JavaScript</span
-          >
-        </a>
+      <div class="section__container">
+        <h1 class="work__title">My work</h1>
+        <div class="work__categories">
+          <button class="category__btn active">
+            All <span class="category__count">1</span>
+          </button>
+          <button class="category__btn">
+            Company <span class="category__count">1</span>
+          </button>
+          <button class="category__btn">
+            Personal <span class="category__count">0</span>
+          </button>
+        </div>
+        <div class="work__projects">
+          <a class="project">
+            <img
+              src="imgs/simulator.png"
+              alt="project_simulator"
+              class="project__img"
+            />
+            <h3 class="project__title">AnyWebSimulator</h3>
+            <span class="project__description"
+              >티맥스소프트의 AnyLink 제품에서 개발된<br />온라인 거래를
+              실시간으로 테스트하기 위한<br />웹 서비스<br /><br />HTML, CSS,
+              JavaScript / React</span
+            >
+          </a>
+          <a href="https://github.com/huajin7282/portfolio" class="project">
+            <img
+              src="imgs/simulator.png"
+              alt="project_portfolio"
+              class="project__img"
+            />
+            <h3 class="project__title">Portfolio</h3>
+            <span class="project__description"
+              >웹 프로필<br /><br />HTML, CSS, JavaScript</span
+            >
+          </a>
+        </div>
       </div>
     </section>
 
