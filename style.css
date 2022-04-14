@@ -110,7 +110,7 @@ p {
 
 #navbar.navbar--dark {
   background-color: var(--color-light-pink);
-  padding: 0px;
+  padding: 0px 0px 0px 8px;
 }
 
 .navbar__menu {
