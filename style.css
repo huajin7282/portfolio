@@ -480,10 +480,6 @@ p {
   margin: 8px;
 }
 
-.contact__title {
-  margin: 32px 0;
-}
-
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   :root {
@@ -586,6 +582,11 @@ p {
 
   .contact__phone__icon,
   .contact__email__icon {
-    font-size: 20px;
+    font-size: 16px;
+  }
+
+  .contact__email__address,
+  .contact__phone__number {
+    margin: 2px;
   }
 }
