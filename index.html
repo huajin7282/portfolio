@@ -27,17 +27,39 @@
         <a href="#" class="navbar__title">Hwajin Lee</a>
       </div>
       <ul class="navbar__menu">
-        <li class="navbar__menu__item active" id="navbar__menu__item__home">
+        <li
+          class="navbar__menu__item"
+          id="navbar__menu__item__home"
+          data-link="#home"
+        >
           Home
         </li>
-        <li class="navbar__menu__item" id="navbar__menu__item__about">About</li>
-        <li class="navbar__menu__item" id="navbar__menu__item__skill">
+        <li
+          class="navbar__menu__item"
+          id="navbar__menu__item__about"
+          data-link="#about"
+        >
+          About
+        </li>
+        <li
+          class="navbar__menu__item"
+          id="navbar__menu__item__skill"
+          data-link="#skills"
+        >
           Skills
         </li>
-        <li class="navbar__menu__item" id="navbar__menu__item__work">
+        <li
+          class="navbar__menu__item"
+          id="navbar__menu__item__work"
+          data-link="#work"
+        >
           My work
         </li>
-        <li class="navbar__menu__item" id="navbar__menu__item__contact">
+        <li
+          class="navbar__menu__item"
+          id="navbar__menu__item__contact"
+          data-link="#contact"
+        >
           Contact
         </li>
       </ul>
@@ -49,10 +71,12 @@
 
     <!-- Home -->
     <section id="home">
-      <img class="home__avatar" src="imgs/profile2.png" alt="profile photo" />
-      <h1 class="home__title">이화진</h1>
-      <h2 class="home__description">Web Front-End Developer</h2>
-      <button class="home__contact">CONTACT</button>
+      <div class="home__container">
+        <img class="home__avatar" src="imgs/profile2.png" alt="profile photo" />
+        <h1 class="home__title">이화진</h1>
+        <h2 class="home__description">Web Front-End Developer</h2>
+        <button class="home__contact" data-link="#contact">CONTACT</button>
+      </div>
     </section>
 
     <!-- About -->
@@ -187,40 +211,47 @@
       <div class="section__container">
         <h1 class="work__title">My work</h1>
         <div class="work__categories">
-          <button class="category__btn active">
+          <button class="category__btn selected" data-filter="*">
             All <span class="category__count">1</span>
           </button>
-          <button class="category__btn">
+          <button class="category__btn" data-filter="company">
             Company <span class="category__count">1</span>
           </button>
-          <button class="category__btn">
+          <button class="category__btn" data-filter="personal">
             Personal <span class="category__count">0</span>
           </button>
         </div>
         <div class="work__projects">
-          <a class="project">
+          <a class="project" data-type="company">
             <img
               src="imgs/simulator.png"
               alt="project_simulator"
               class="project__img"
             />
             <h3 class="project__title">AnyWebSimulator</h3>
-            <span class="project__description"
-              >티맥스소프트의 AnyLink 제품에서 개발된<br />온라인 거래를
-              실시간으로 테스트하기 위한<br />웹 서비스<br /><br />HTML, CSS,
-              JavaScript / React</span
-            >
+            <div class="project__description">
+              <span>
+                티맥스소프트의 AnyLink 제품에서 개발된<br />온라인 거래를
+                실시간으로 테스트하기 위한<br />웹 서비스
+              </span>
+              <span class="project__config">HTML, CSS, JavaScript / React</span>
+            </div>
           </a>
-          <a href="https://github.com/huajin7282/portfolio" class="project">
+          <a
+            href="https://github.com/huajin7282/portfolio"
+            class="project"
+            data-type="personal"
+          >
             <img
               src="imgs/simulator.png"
               alt="project_portfolio"
               class="project__img"
             />
             <h3 class="project__title">Portfolio</h3>
-            <span class="project__description"
-              >웹 프로필<br /><br />HTML, CSS, JavaScript</span
-            >
+            <div class="project__description">
+              <span>웹 프로필</span
+              ><span class="project__config">HTML, CSS, JavaScript</span>
+            </div>
           </a>
         </div>
       </div>
