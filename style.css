@@ -312,6 +312,7 @@ p {
 }
 
 .skill__description {
+  font-size: var(--font-regular);
   display: flex;
   justify-content: space-between;
 }
@@ -338,6 +339,7 @@ p {
 
 .tools,
 .etc {
+  font-size: var(--font-regular);
   padding: 20px;
 }
 
@@ -484,8 +486,33 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    --font-large: 38px;
+    --font-medium: 20px;
+    --font-regular: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+  }
+
+  h1 {
+    margin: 10px 0;
+  }
+
+  h2 {
+    margin: 5px 0;
+  }
+
+  h3 {
+    margin: 5px 0;
+  }
+
+  p {
+    margin: 2px 0;
+  }
+
   .navbar__toggle-btn {
     display: block;
+    font-size: 20px;
   }
 
   #navbar {
@@ -509,6 +536,12 @@ p {
     display: block;
   }
 
+  .home__avatar {
+    width: 200px;
+    height: 200px;
+    margin: 44px;
+  }
+
   .about__majors {
     flex-direction: column;
   }
@@ -517,11 +550,42 @@ p {
     margin-bottom: 38px;
   }
 
+  .major__icon {
+    width: 120px;
+    height: 120px;
+    font-size: 50px;
+    line-height: 120px;
+    margin-bottom: 0px;
+  }
+
   .job {
     flex-direction: column;
   }
 
+  .job__logo__tmax {
+    width: 154px;
+    height: 36px;
+  }
+  .job__logo__soongsil {
+    width: 80px;
+    height: 20px;
+  }
+
   .skillset {
     flex-direction: column;
+  }
+
+  .project {
+    width: 250px;
+    height: 250px;
+  }
+
+  .project__img {
+    width: 170px;
+  }
+
+  .contact__phone__icon,
+  .contact__email__icon {
+    font-size: 20px;
   }
 }
