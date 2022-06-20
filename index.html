@@ -115,7 +115,8 @@
           </div>
         </div>
         <div class="about__jobs">
-          <div class="job">
+          <div class="line"></div>
+          <div class="job" style="top: 32px; left: 30%">
             <img
               src="imgs/Tmaxsoft CI.png"
               alt="company_tmaxsoft"
@@ -125,24 +126,25 @@
               <p class="job__name">티맥스소프트 연구원 재직</p>
               <p class="job__period">2021년 1월 ~ 현재</p>
             </div>
+            <div class="line__point" style="left: 30%"></div>
           </div>
-          <div class="job">
-            <div>
-              <img
-                src="imgs/soongsil CI.png"
-                alt="university_soongsil"
-                class="job__logo__soongsil"
-              />
-              <img
-                src="imgs/soongsil logo.png"
-                alt="university_soongsil"
-                class="job__logo__soongsil"
-              />
-            </div>
+          <div class="job" style="top: 82px; left: 10%">
+            <div class="line__point" style="left: 10%"></div>
+            <img
+              src="imgs/soongsil CI.png"
+              alt="university_soongsil"
+              class="job__logo__soongsil"
+            />
             <div class="job__description">
               <p class="job__name">숭실대학교 컴퓨터학부 졸업</p>
               <p class="job__period">2017년 3월 ~ 2021년 2월</p>
             </div>
+          </div>
+          <div class="job" style="top: 36px">
+            <div class="job__description">
+              <p class="job__name">1998년 6월 8일<br />출생</p>
+            </div>
+            <div class="line__point"></div>
           </div>
         </div>
       </div>
@@ -158,37 +160,46 @@
             <div class="skill">
               <div class="skill__description">
                 <span>HTML</span>
-                <span>75%</span>
+                <span>65%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 75%"></div>
+                <div class="skill__value" style="width: 65%"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
                 <span>CSS</span>
-                <span>75%</span>
+                <span>65%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 75%"></div>
+                <div class="skill__value" style="width: 65%"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
                 <span>JavaScript</span>
-                <span>80%</span>
+                <span>70%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 80%"></div>
+                <div class="skill__value" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>TypeScript</span>
+                <span>50%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 50%"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
                 <span>React</span>
-                <span>85%</span>
+                <span>65%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 85%"></div>
+                <div class="skill__value" style="width: 65%"></div>
               </div>
             </div>
           </div>
@@ -216,13 +227,13 @@
         <h1 class="work__title">My work</h1>
         <div class="work__categories">
           <button class="category__btn selected" data-filter="*">
-            All <span class="category__count">1</span>
+            All <span class="category__count">3</span>
           </button>
           <button class="category__btn" data-filter="company">
             Company <span class="category__count">1</span>
           </button>
           <button class="category__btn" data-filter="personal">
-            Personal <span class="category__count">0</span>
+            Personal <span class="category__count">2</span>
           </button>
         </div>
         <div class="work__projects">
@@ -235,8 +246,7 @@
             <h3 class="project__title">AnyWebSimulator</h3>
             <div class="project__description">
               <span>
-                티맥스소프트의 AnyLink 제품에서 개발된<br />온라인 거래를
-                실시간으로 테스트하기 위한<br />웹 서비스
+                기관 간에 전문 송수신 테스트를 위한<br />admin 사이트
               </span>
               <span class="project__config">HTML, CSS, JavaScript / React</span>
             </div>
@@ -253,9 +263,27 @@
             />
             <h3 class="project__title">Portfolio</h3>
             <div class="project__description">
-              <span>웹 프로필</span
+              <span>포트폴리오</span
               ><span class="project__config"
                 >HTML, CSS, JavaScript with media query</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://github.com/huajin7282/clone-coding/tree/master/netflix"
+            class="project"
+            data-type="personal"
+          >
+            <img
+              src="imgs/netflix.png"
+              alt="project_netflix"
+              class="project__img"
+            />
+            <h3 class="project__title">Netflix</h3>
+            <div class="project__description">
+              <span>클론코딩: 넷플릭스</span
+              ><span class="project__config"
+                >HTML, CSS, TypeScript / React</span
               >
             </div>
           </a>
