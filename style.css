@@ -600,13 +600,13 @@ p {
 
   .job {
     flex-direction: row;
-    column-gap: 4px;
-    width: 300px;
+    column-gap: 1px;
+    width: 200px;
   }
 
   #tmaxsoft {
     top: 66%;
-    left: -194px;
+    left: -188px;
   }
 
   #soongsil {
@@ -616,7 +616,7 @@ p {
 
   #birth {
     top: 94%;
-    left: -94px;
+    left: -92px;
   }
 
   .job__logo__tmax {
