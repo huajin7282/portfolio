@@ -271,6 +271,12 @@ p {
   align-items: center;
 }
 
+.job__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #tmaxsoft {
   top: -90px;
   left: 30%;
@@ -606,7 +612,7 @@ p {
 
   #tmaxsoft {
     top: 66%;
-    left: -188px;
+    left: -137px;
   }
 
   #soongsil {
