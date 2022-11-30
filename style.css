@@ -371,10 +371,17 @@ p {
 .skillset__right {
   flex-basis: 40%;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .tools {
   background-color: var(--color-dark-white);
+  height: 120%;
+}
+
+.etc {
+  height: 80%;
 }
 
 .tools,
