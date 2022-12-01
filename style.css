@@ -245,78 +245,50 @@ p {
 
 .about__jobs {
   display: flex;
-  height: 300px;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  row-gap: 50px;
 }
 
 .line {
-  position: relative;
   width: 100%;
-  height: 5px;
-  background-color: var(--color-blue);
-}
-
-.line__point {
-  margin: 10px 0;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
+  height: 2px;
   background-color: var(--color-blue);
 }
 
 .job {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 4px;
 }
 
 .job__box {
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-
-#tmaxsoft {
-  top: -90px;
-  left: 30%;
-}
-
-#soongsil {
-  top: -16px;
-  left: 10%;
-}
-
-#birth {
-  top: -62px;
-  left: -4%;
-}
-
-.job:hover .line__point {
-  background-color: var(--color-yellow);
+  column-gap: 50px;
 }
 
 .job__description {
-  display: inline-block;
-  margin: 0 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .job__name {
   font-size: var(--font-micro);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
+  margin: 0px;
 }
 
 .job__period {
   font-size: var(--font-micro);
 }
 
-.job__logo__tmax {
+.job__logo {
   width: 100px;
-  height: 24px;
-}
-.job__logo__soongsil {
-  width: 50px;
   height: 24px;
 }
 
@@ -608,42 +580,8 @@ p {
     margin-bottom: 0px;
   }
 
-  .about__jobs {
-    justify-content: center;
-  }
-
-  .line {
-    width: 5px;
-    height: 100%;
-  }
-
-  .job {
-    flex-direction: row;
-    column-gap: 1px;
-    width: 200px;
-  }
-
-  #tmaxsoft {
-    top: 66%;
-    left: -137px;
-  }
-
-  #soongsil {
-    top: 80%;
-    left: -5px;
-  }
-
-  #birth {
-    top: 94%;
-    left: -92px;
-  }
-
-  .job__logo__tmax {
+  .job__logo {
     width: 50px;
-    height: 12px;
-  }
-  .job__logo__soongsil {
-    width: 25px;
     height: 12px;
   }
 
