@@ -470,6 +470,12 @@ p {
   font-weight: var(--weight-semi-bold);
 }
 
+#project__next:hover h3 {
+  transform: scale(2);
+  transition: all var(--animation-duration) ease;
+  color: var(--color-yellow);
+}
+
 .project__description {
   position: absolute;
   display: flex;
